@@ -1,3 +1,30 @@
 .hidden {
   display: none;
 }
+
+#Simulation {
+  position: relative;
+}
+
+.upbutton {
+  all: unset;
+  text-align: center;
+  background-color: rgb(222, 125, 125);
+  margin-bottom: 10px;
+
+}
+.downbutton {
+  all: unset;
+  text-align: center;
+  background-color: rgb(222, 125, 125);
+  margin-bottom: 8px;
+
+}
+.back {
+  all: unset;
+  text-align: center;
+  background-color: rgb(30, 160, 93);
+  margin-bottom: 8px;
+  padding-block: 10px;
+  
+}
