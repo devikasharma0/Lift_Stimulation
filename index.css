@@ -6,25 +6,75 @@
   position: relative;
 }
 
+h1 {
+  font-family: manrope;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 20px;
+  font-size: xx-large;
+}
 .upbutton {
   all: unset;
   text-align: center;
-  background-color: rgb(222, 125, 125);
+  background-color: #ffe599;
   margin-bottom: 10px;
-
+  font-weight: 700;
 }
 .downbutton {
   all: unset;
   text-align: center;
-  background-color: rgb(222, 125, 125);
+  background-color: #eec3e8;
   margin-bottom: 8px;
-
+  font-weight: 700;
 }
 .back {
   all: unset;
   text-align: center;
-  background-color: rgb(30, 160, 93);
+  background-color: #f98687;
   margin-bottom: 8px;
   padding-block: 10px;
-  
+  font-family: manrope;
+  font-weight: 700;
+}
+.floordiv {
+  font-family: manrope;
+  font-weight: 700;
+}
+input{
+  width: 541px;
+  height: 10px; 
+  padding: 10px; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  border: 2px solid #ccc; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.submit-button {
+  all: unset;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #b3a4a4;
+  width: 540px;
+  margin-bottom: 8px;
+  font-family: manrope;
+  font-weight: 700;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: manrope;
+  font-weight: 700;
+}
+.container{
+  width: 600px;
+  display: flex;
+  background-color: #f98687;
+  padding: 20px; /* Add some padding to the form */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }

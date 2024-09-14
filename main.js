@@ -17,14 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     form.classList.add("hidden");
     back.style.display = "block";
+    container.style.display = "none";
     createLifts(lift_value);
     createFloors(floor_value);
   });
 
   back.addEventListener("click", () => {
     form.classList.remove("hidden");
-    simulation.innerHTML = "";
     back.style.display = "none";
+    container.style.display = "flex";
+    simulation.innerHTML = "";
   });
   
   function createLifts(lift_value){
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const lift = document.createElement("div");
       lift.style.height = "100px";
       lift.style.width = "70px";
-      lift.style.backgroundColor = "red";
+      lift.style.backgroundColor = "#69b0fc";
       lift.style.position = "absolute";
       lift.style.left = `${100*(i+1)}px`;
       lift.style.bottom = "2px";
@@ -45,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const upButton = document.createElement("button");
       const downButton = document.createElement("button");
       const textDiv = document.createElement("p")
-      textDiv.innerText = `floor ${floor_value-i-1}` //to print value of i 
+      textDiv.innerText = `Floor ${floor_value-i-1}` //to print value of i 
       floorDiv.style.height = "150px"
       floorDiv.style.display = "grid"
       upButton.style.width = "60px"
@@ -55,8 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
       floorDiv.className = "floordiv";
       upButton.className = "upbutton";
       downButton.className = "downbutton";
-      upButton.innerText = "up";
-      downButton.innerText = "down";
+      upButton.innerText = "Up";
+      downButton.innerText = "Down";
       floorDiv.appendChild(textDiv);
       floorDiv.appendChild(upButton);
       floorDiv.appendChild(downButton);
