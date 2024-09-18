@@ -4,6 +4,7 @@
 
 #Simulation {
   position: relative;
+
 }
 
 h1 {
@@ -82,7 +83,7 @@ input {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .inner-container {
-  background-color: #f98687;
+  background-color: #ee9697;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
